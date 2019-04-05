@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "store": {
+    "utbmStore": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/store",
+            "outputPath": "dist/utbmStore",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "store:build"
+            "browserTarget": "utbmStore:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "store:build:production"
+              "browserTarget": "utbmStore:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "store:build"
+            "browserTarget": "utbmStore:build"
           }
         },
         "test": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "store-e2e": {
+    "utbmStore-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,11 +104,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "store:serve"
+            "devServerTarget": "utbmStore:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "store:serve:production"
+              "devServerTarget": "utbmStore:serve:production"
             }
           }
         },
@@ -124,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "store"
+  "defaultProject": "utbmStore"
 }
