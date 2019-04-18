@@ -9,22 +9,27 @@
   </a>
 </nav>
 
-<div class="card-deck">
-	<div *ngFor="let product of products">
-	  <div class="card" style="width: 18rem;">
-		  <h5 class="card-header">{{product.name}} </h5>
-		  <img src={{product.image}} class="card-img-top">
-		  <div class="card-body">
-			<p class="card-text">Description : {{product.description}}</p>
-			<p class="card-text">Price : {{product.price}}</p>
-			<a href="https://www.youtube.com/watch?v=kzQpiJjdprQ" class="btn btn-primary">Buy Me !</a>
-		  </div>
-	  </div>
 
+<div class="p-3 mb-2 bg-dark text-white">
+
+	<div class="card-deck">
+		<div *ngFor="let product of products">
+		  <div class="card" style="width: 18rem;">
+			  <h5 class="card-header">{{product.name}} </h5>
+			  <img src={{product.image}} class="card-img-top">
+			  <div class="card-body">
+				<p class="card-text">Description : {{product.description}}</p>
+				<p class="card-text">Price : {{product.price}}</p>
+				<a href="https://www.youtube.com/watch?v=kzQpiJjdprQ" class="btn btn-primary">Buy Me !</a>
+			  </div>
+		  </div>
+
+		</div>
 	</div>
+	
 </div>
 
-<footer class="page-footer font-small dark">
+<footer class="page-footer unique-color dark">
 
   <div class="footer-copyright text-center py-3">© 2019 Damn No Copyright:
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> praiseTheSun.ds</a>
